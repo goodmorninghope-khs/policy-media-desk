@@ -26,3 +26,13 @@
 - ChatGPT 대화 입력: 보이는 div.ProseMirror(nth(1)) 클릭 → keyboard.insertText → `button[aria-label="보내기"]`. 답은 /api/auth/session accessToken으로 /backend-api/conversation/{id} mapping에서 마지막 assistant(status finished_successfully). U+E000~U+F8FF 문자와 'genui{…}}' 표식을 지운다.
 - Aside routine 수정은 routine_update에 지침 전문을 다시 넣어야 한다(부분 수정 API 없음). 바꾸기 전 aside.routines.get(id).prompt를 tmp에 백업.
 - Aside routine의 rrule을 바꾸면 오늘 남은 회차가 사라질 수 있다 → 필요하면 같은 일을 하는 1회성 routine을 따로 건다.
+
+## 2026-10-30 중랑브리핑(보도자료 기반 쌍둥이) 시범판
+
+- 2026-10-30 · GPT·Claude에 같은 질문으로 망우로 견본 기사를 받았더니 GPT는 다른 언론사 사진을 붙였고, Claude는 원문 대신 받아쓴 언론 기사로 사실을 확인했다 → '1차 출처는 기관 원문 하나, 사진은 원문 첨부만' 규칙으로 정하고 숫자·따옴표 문구 자동 대조를 사이트에 넣었다.
+- 2026-10-30 · Claude가 짚은 공직선거법 제86조 제5항을 조문으로 확인: 지자체 활동상황 홍보물은 분기별 1종 1회, 직원 업무용은 예외 → 매일 나가는 브리핑은 직원용으로 시작하고 주민 공개는 선관위 질의 뒤.
+- 2026-10-30 · 원문 첨부 사진에 기업 로고, 청사 전경, 지난해 행사 사진, 청소년 얼굴 근접 사진이 섞여 있었다 → 사진을 고르는 규칙을 두고, 쓰지 않는 사진은 저장소에도 올리지 않는다(한 번 업로드 목록에 잘못 담겨 커밋 전에 뺐다).
+- 도구 요령: 중랑구청 게시판은 REPL fetch가 실패해 탭으로 열어 읽었고(.view_box, #dbdata), 사진 서버(jnadm)는 REPL fetch로 받아졌다. 이미지 주소로 goto하면 시간 초과.
+- 도구 요령: Aside Playwright에는 route()가 없고 file:// 열기와 로컬 HttpListener도 막힌다 → 미리보기는 about:blank에 CSS·JS·데이터를 인라인하고 사진을 data URL로 바꿔 document.write.
+- 도구 요령: GitHub 새 하위 폴더는 new/main?filename=폴더/README.md&value=… 로 먼저 만들고 upload/main/폴더에 올린다. 여러 장을 한 번에 올리고 바로 커밋하면 chrome-error가 나며 커밋이 안 될 수 있다 → 5장씩, 목록 확인 뒤 커밋.
+- 도구 요령: Vercel 새 프로젝트 첫 배포는 이메일 보안코드(5분)를 요구한다 → Gmail에서 'Your Vercel security code'를 읽어 넣으면 6자리 입력과 함께 자동 제출된다.
