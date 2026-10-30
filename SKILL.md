@@ -1,6 +1,6 @@
 ---
 name: "policy-media-desk"
-description: "미디어 방식으로 내부 정책 결정에 기여하는 '정책 미디어'를 Aside가 기획단장(통합 데스크)으로서 Claude(집필)·GPT(촉 레이더·검증)와 함께 운영·점검·실험·확장할 때 사용. 첫 사례는 중랑정책미디어(JUNGNANG SIGNAL × 아궁이, jungnang-media.vercel.app, 창간 2026-11-11). 창간 기획단, 예비호, MORNING·WEEKLY·두부 지면, 촉 레이더 후보, 새벽 진열, 일일 점검 메일, 예비호 실험, 문체·공약 연결 기준, 새 정책 미디어(다른 주제·부서·기관) 만들기 요청에 쓴다."
+description: "미디어 방식으로 내부 정책 결정에 기여하는 '정책 미디어'를 Aside가 기획단장(통합 데스크)으로서 Claude(집필)·GPT(촉 레이더·검증)와 함께 운영·점검·실험·확장할 때 사용. 첫 사례는 중랑정책미디어(JUNGNANG SIGNAL × 아궁이, jungnang-media.vercel.app, 창간 2026-11-11). 창간 기획단, 예비호, MORNING·WEEKLY·두부 지면, 촉 레이더 후보, 새벽 진열, 일일 점검 메일, 예비호 실험, 문체·공약 연결 기준, 새 정책 미디어(다른 주제·부서·기관) 만들기, 보도자료 기반 쌍둥이 매체(중랑브리핑) 요청에 쓴다."
 ---
 
 # 정책 미디어 데스크
@@ -52,6 +52,10 @@ Aside routine은 사용자 PC에서 돈다. PC가 꺼져 있으면 켜진 뒤 �
 ## 새 정책 미디어로 넓히기
 
 다른 주제·부서·기관으로 같은 방식을 옮길 때는 [references/expansion-playbook.md](references/expansion-playbook.md)의 순서(목적·독자 → 헌장 → 엔진 배치 → 저장소·사이트 → 일정 → 예비호 실험 → 창간 가부)를 따른다. 중랑정책미디어를 첫 선례로 인용한다.
+
+## 쌍둥이: 보도자료 기반 브리핑
+
+정책 미디어(밖 → 안)의 쌍둥이로, 기관 보도자료를 원료로 원문 그대로의 사실을 남기는 1차 기록 매체(안 → 밖)를 세우거나 운영할 때는 [references/briefing-twin.md](references/briefing-twin.md)(지면·기사 템플릿·변환 규칙 10·원문 자동 대조·약속 달력·운영 루프·공직선거법 제86조 제5항)를 따른다. 첫 선례는 중랑브리핑 시범판(2026-10-30, https://jungnang-briefing.vercel.app, 저장소 goodmorninghope-khs/jungnang-briefing). 해석은 브리핑 본문에 섞지 않고 정책 미디어 링크로만 잇는다.
 
 ## 판단 경계
 
