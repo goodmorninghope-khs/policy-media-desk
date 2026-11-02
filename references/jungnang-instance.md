@@ -25,6 +25,7 @@ Claude 예약 작업 지침 맨 앞 블록 순서: [예비호 실험] → [문�
 
 - 사이트: https://jungnang-media.vercel.app (저장소 goodmorninghope-khs/jungnang-media, main 커밋 → Vercel 자동 배포 1~2분)
   - `data/editions.json`: 편집국 직송판 배열. app.js `loadLive()`가 제작실 피드 뒤에 읽어, 같은 series+날짜가 제작실에 없을 때만 앞에 넣는다(제작실 판이 오면 자동 교체). 항목 예: id morning-20261030.
+  - 오늘 면 '이번 주의 촉과 침'(app.js viewToday): 이번 주 판이 6개 미만이면 지난 촉과 침으로 채운다(FILL_TO=6, 침 최대 2, 2026-11-02).
   - `data/{id}.webp`: 지면 이미지(Claude 대화의 files/…/preview, 896px webp).
   - 피드 rewrites(vercel.json): /feed/signal.json(GPT 제작실 data.json), /feed/aa/catalog.js(아궁이), /feed/chok/:file(GitHub inbox/chok).
 - 규칙 원장: https://github.com/goodmorninghope-khs/jungnang-signal — shared/chokchim-charter.md(v1.1), pledge-map.md(공약 7대 비전), pilot-experiments.md(실험표), reference-hub.md(두 엔진 공통 참조), launch-pilot.md(파일럿·일정), convergence.md, two-engines.md, inbox/chok/.
