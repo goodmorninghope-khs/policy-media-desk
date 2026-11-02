@@ -53,4 +53,4 @@
 - 2026-10-30 · GPT 촉 레이더 ↔ jungnang-signal inbox/chok, reference-hub.md로 두 엔진 공통 참조 시작.
 - 2026-10-30 · 중랑브리핑 시범판(jungnang-briefing) 개설: 구청 보도자료 10건(10/26~30)을 변환, 기사마다 정책미디어 공약 서가 링크와 7대 비전 꼬리표를 달았다. 정식 연계는 발행인 결정 대기.
 - 2026-10-30 · 발행인 승인으로 자체 저장소 11곳(jungnang-signal, jungnang-media, jungnang-ax2030, ax100-log-desk, jungnang-secretariat, jungnang-public-communication, ax-classroom-eogedoene, kimhyunsung-che, appointment-certificate-office, policychef, jungnang-3D) README에 '연계 (밸류체인)' 절을 넣어 양방향으로 이었다. jungnang-ax2030은 README가 없어 새로 만들었다. 포크 6곳은 손대지 않았다.
-- 2026-11-02 · 글쓰기 루프(writing-loop) 스킬을 만들어 이 데스크의 문체·선정·변환·선거법 기준을 루프 점검 게이트로 이었다. 공개 저장소 반영은 발행인 확인 대기.
+- 2026-11-02 · 글쓰기 루프(writing-loop) 스킬을 만들어 이 데스크의 문체·선정·변환·선거법 기준을 루프 점검 게이트로 이었다. 같은 날 발행인 지시로 공개 저장소 writing-loop를 새로 만들고 이 저장소(policy-media-desk)도 맞췄다.
