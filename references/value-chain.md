@@ -23,7 +23,8 @@
 | ① 원료 · ⑦ | ax100-log-desk | 받음: AI혁신팀이 이미 한 일(일지·업무기록) → reference-hub '중랑이 이미 하고 있는 일' 근거. 넘김: WEEKLY AX 신호를 일지 '연결 가설' 후보로 | 제안 |
 | ② 제작 | jungnang-signal | 편집국 규칙 원장(헌장·pledge-map·실험표·reference-hub·inbox). 이 데스크의 기준 원본 | 연계 |
 | ② 제작 | kimhyunsung-che | 받음: 발행인 목소리·문체 기준(창간사·특집) | 제안 |
-| ② 제작 | im-not-ai (포크, 원본 epoko77-ai) | 받음: 사실은 두고 AI 티만 덜어 내는 검수(평가로 느껴지지 않는 문체 점검과 함께) | 제안 |
+| ② 제작 | im-not-ai (포크, 원본 epoko77-ai) | 받음: 사실은 두고 AI 티만 덜어 내는 검수(평가로 느껴지지 않는 문체 점검과 함께). 2026-11-02 Aside 스킬 humanize-korean으로 설치 | 제안 |
+| ② 제작 | writing-loop (Aside 스킬, 2026-11-02) | 받음: 이 데스크의 문체 기준(style-and-selection A·B), 보도자료 변환 규칙 10, 선거법 점검을 루프 ④ 점검의 기관 게이트로 씀. 넘김: 발행인 글(창간사·특집·인사말)의 완성본과 점검표. 편집국 지면은 점검만 | 제안 |
 | ③ 진열 | jungnang-media | 넘김: data/editions.json 편집국 직송판, 지면 이미지 | 연계 |
 | ① 원료 · ③ 진열 | jungnang-briefing (쌍둥이, 안 → 밖) | 받음: 구청 보도자료 원문·사진 → 1차 기록 기사·약속 달력. 넘김: '중랑 2' 원료, 공약 이행 기록, 후속 일정 → 정책 미디어. 받음: 기사 끝 공약 서가 링크만(본문에 해석 섞지 않음) | 제안(시범판 2026-10-30) |
 | ④ 정책화 | jungnang-agungi (jungnang-signal/agungi) | 넘김: 침·Q가 굵은 신호 → 착상→문답→구조→1장으로 굽기(정책·작은 실험) | 연계(같은 저장소) |
@@ -52,3 +53,4 @@
 - 2026-10-30 · GPT 촉 레이더 ↔ jungnang-signal inbox/chok, reference-hub.md로 두 엔진 공통 참조 시작.
 - 2026-10-30 · 중랑브리핑 시범판(jungnang-briefing) 개설: 구청 보도자료 10건(10/26~30)을 변환, 기사마다 정책미디어 공약 서가 링크와 7대 비전 꼬리표를 달았다. 정식 연계는 발행인 결정 대기.
 - 2026-10-30 · 발행인 승인으로 자체 저장소 11곳(jungnang-signal, jungnang-media, jungnang-ax2030, ax100-log-desk, jungnang-secretariat, jungnang-public-communication, ax-classroom-eogedoene, kimhyunsung-che, appointment-certificate-office, policychef, jungnang-3D) README에 '연계 (밸류체인)' 절을 넣어 양방향으로 이었다. jungnang-ax2030은 README가 없어 새로 만들었다. 포크 6곳은 손대지 않았다.
+- 2026-11-02 · 글쓰기 루프(writing-loop) 스킬을 만들어 이 데스크의 문체·선정·변환·선거법 기준을 루프 점검 게이트로 이었다. 공개 저장소 반영은 발행인 확인 대기.
