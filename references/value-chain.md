@@ -34,6 +34,7 @@
 | ④ 정책화 | Insamal-Claude- (포크, 원본 JungnangSong) | 넘김: 행사 주제와 닿는 밖의 사례 한 줄 → 인사말씀 요청서의 '인용할 사례' 칸 후보(부서 초안, 사실 확인 필수) | 제안 |
 | ④ 정책화 | jungnang-3D | 받음/넘김: ④ 주거환경 공약 신호와 정비지도 3D를 짝지어 침의 시각 자료로 | 제안 |
 | ⑤ 확산 | jungnang-public-communication | 넘김: 내부 지면에서 무르익은 의제 → 주민 대상 공공커뮤니케이션 기획(모래시계 모델) | 제안 |
+| ⑤ 확산 | youtube-agent (Aside 스킬, 원본 Jakeschincariol/youtube-agent-skill, MIT, 2026-11-04 설치) | 받음: storytelling-loop 영상 구성안·쇼츠 대본, 지면 1분판, 내장 youtube 스킬의 자막·댓글·공개 지표. 넘김: 훅이 채점된 대본·제목·썸네일·설명란·챕터 → 사용자 업로드, 컷 목록·쇼츠 후보 → motion-studio·showreel, 확산 문구 → marketingskills(writing-loop 홍보 경로). 기관 채널은 이 데스크 문체·선거법 기준을 점검 게이트로 | 제안 |
 | ⑤ 확산 | motion-studio · showreel (포크, 원본 nk-mjk · revfactory) | 넘김: 지면 1분판 → 9:16 쇼츠·홍보 영상 | 제안 |
 | ⑤ 학습 | ax-classroom-eogedoene | 넘김: WEEKLY AX 신호 → AX교실 '업무 상황별' 사례·미션 후보 | 제안 |
 | ⑥ 기록 | policychef | 넘김: 창간 경과·선례 요약 → 정책셰프 아카이브(사실 확인된 공식 기록만) | 제안 |
@@ -55,4 +56,5 @@
 - 2026-10-30 · 중랑브리핑 시범판(jungnang-briefing) 개설: 구청 보도자료 10건(10/26~30)을 변환, 기사마다 정책미디어 공약 서가 링크와 7대 비전 꼬리표를 달았다. 정식 연계는 발행인 결정 대기.
 - 2026-10-30 · 발행인 승인으로 자체 저장소 11곳(jungnang-signal, jungnang-media, jungnang-ax2030, ax100-log-desk, jungnang-secretariat, jungnang-public-communication, ax-classroom-eogedoene, kimhyunsung-che, appointment-certificate-office, policychef, jungnang-3D) README에 '연계 (밸류체인)' 절을 넣어 양방향으로 이었다. jungnang-ax2030은 README가 없어 새로 만들었다. 포크 6곳은 손대지 않았다.
 - 2026-11-02 · 글쓰기 루프(writing-loop) 스킬을 만들어 이 데스크의 문체·선정·변환·선거법 기준을 루프 점검 게이트로 이었다. 같은 날 발행인 지시로 공개 저장소 writing-loop를 새로 만들고 이 저장소(policy-media-desk)도 맞췄다.
+- 2026-11-04 · youtube-agent(Jakeschincariol/youtube-agent-skill, 11개 모듈·파이썬 도구 6개)를 Aside 스킬로 설치하고 storytelling-loop·writing-loop·marketingskills·내장 youtube와 ⑤ 확산 고리로 이었다. 원본은 원작자 저장소라 고치지 않았다.
 - 2026-11-02 · 스토리텔링 루프(storytelling-loop)를 만들어 screenwriting(jtydhr88)·screenplay-review-checklist(zhlmi)를 설치하고 writing-loop와 서로 넘기는 고리(이야기 글 → storytelling-loop, 기획의도·홍보 문장 → writing-loop)를 이었다. 공개 저장소 storytelling-loop 생성, writing-loop·이 저장소 공개본도 맞춤.
