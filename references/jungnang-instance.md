@@ -24,6 +24,7 @@ Claude 예약 작업 지침 맨 앞 블록 순서: [예비호 실험] → [문�
 ## 주소
 
 - 사이트: https://jungnang-media.vercel.app (저장소 goodmorninghope-khs/jungnang-media, main 커밋 → Vercel 자동 배포 1~2분)
+  - 주소 하나 원칙(2026-11-04 통합): 옛 리디자인 미리보기 주소 https://jungnang-media2.vercel.app 은 307로 본 주소에 넘긴다(Vercel Domains). 리디자인(MotionSites, 큰 제호·머리기사 먼저)은 main style.css에 들어갔다. 새 디자인을 시험할 때 브랜치 미리보기 도메인을 붙이면 새벽 진열(main)을 받지 못하니, 시험은 짧게 하고 끝나면 main에 합친 뒤 도메인을 Production이나 본 주소 리디렉트로 돌린다.
   - `data/editions.json`: 편집국 직송판 배열. app.js `loadLive()`가 제작실 피드 뒤에 읽어, 같은 series+날짜가 제작실에 없을 때만 앞에 넣는다(제작실 판이 오면 자동 교체). 항목 예: id morning-20261030.
   - 오늘 면 '이번 주의 촉과 침'(app.js viewToday): 이번 주 판이 6개 미만이면 지난 촉과 침으로 채운다(FILL_TO=6, 침 최대 2, 2026-11-02).
   - `data/{id}.webp`: 지면 이미지(Claude 대화의 files/…/preview, 896px webp).
