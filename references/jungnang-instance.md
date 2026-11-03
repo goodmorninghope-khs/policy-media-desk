@@ -25,7 +25,9 @@ Claude 예약 작업 지침 맨 앞 블록 순서: [예비호 실험] → [문�
 
 - 사이트: https://jungnang-media.vercel.app (저장소 goodmorninghope-khs/jungnang-media, main 커밋 → Vercel 자동 배포 1~2분)
   - 주소 하나 원칙(2026-11-04 통합): 옛 리디자인 미리보기 주소 https://jungnang-media2.vercel.app 은 307로 본 주소에 넘긴다(Vercel Domains). 리디자인(MotionSites, 큰 제호·머리기사 먼저)은 main style.css에 들어갔다. 새 디자인을 시험할 때 브랜치 미리보기 도메인을 붙이면 새벽 진열(main)을 받지 못하니, 시험은 짧게 하고 끝나면 main에 합친 뒤 도메인을 Production이나 본 주소 리디렉트로 돌린다.
-  - `data/editions.json`: 편집국 직송판 배열. app.js `loadLive()`가 제작실 피드 뒤에 읽어, 같은 series+날짜가 제작실에 없을 때만 앞에 넣는다(제작실 판이 오면 자동 교체). 항목 예: id morning-20261030.
+  - `data/editions.json`: 편집국 직송판 배열. app.js `loadLive()`가 제작실 피드와 함께 읽어, 같은 지면(series+날짜, 같은 날 여럿이면 제목이 가장 닮은 것)이 제작실에 있으면 본문·제목·공약은 편집국 판(정정판 포함)을 쓰고 제작실 id와 제작실에만 있는 칸은 남긴다(2026-11-04부터. 전에는 제작실 판이 오면 통째로 바뀌어 정정 전 본문이 보였다). 없으면 앞에 넣는다. 항목 예: id morning-20261030.
+  - 공약 칩(app.js `pledgesOf`): 항목의 pledges 배열을 먼저 쓰고, 없을 때만 본문의 '날줄 공약N' → '닿는 공약' 구간(씨줄·'|' 앞까지, 'AX①' 제외) 순으로 읽는다(2026-11-04 고침).
+  - 정정판 진열: editions.json 항목 body를 고치고 처음 판은 versions 맨 앞에 {label:'처음 판 · HH:MM', body}로, edition은 '편집국 직송판 · 정정', corrections.json에 kind '정정' 한 건(what·how·why·when·prev_version_link·source), chim-trace의 from.signal 제목도 맞춘다.
   - 오늘 면 '이번 주의 촉과 침'(app.js viewToday): 이번 주 판이 6개 미만이면 지난 촉과 침으로 채운다(FILL_TO=6, 침 최대 2, 2026-11-02).
   - `data/{id}.webp`: 지면 이미지(Claude 대화의 files/…/preview, 896px webp).
   - 피드 rewrites(vercel.json): /feed/signal.json(GPT 제작실 data.json), /feed/aa/catalog.js(아궁이), /feed/chok/:file(GitHub inbox/chok).
