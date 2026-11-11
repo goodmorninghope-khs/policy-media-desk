@@ -5,8 +5,9 @@
 
 ## 호수
 
-MORNING: 10/29 Vol.25 ①, 10/30 Vol.26 ②, 11/2 Vol.27 ③, 11/3 Vol.28 ④, 11/4 Vol.29 ⑤, 11/5 Vol.30 ⑥, 11/6 Vol.31 ⑦, 11/9 Vol.32 ⑧, 11/10 Vol.33 ⑨, 11/11 Vol.34 창간호, 이후 평일마다 +1. 호수 기준은 편집국 기록.
-주간: 월 WEEKLY AX, 화 두부(넷째 화 PEOPLE, 첫 회 11/24), 수 WEEKLY '이번 주 침'. 11/2 WEEKLY AX Vol.4, 11/3 두부 Vol.4, 11/4 WEEKLY Vol.5, 11/9 WEEKLY AX Vol.5, 11/10 두부 Vol.5.
+MORNING: 10/29 Vol.25 ①, 10/30 Vol.26 ②, 11/2 Vol.27 ③, 11/3 Vol.28 ④, 11/4 Vol.29 ⑤, 11/5 Vol.30 ⑥, 11/6 Vol.31 ⑦, 11/9 Vol.32 ⑧, 11/10 Vol.33 ⑨, 11/11 Vol.34 창간호(04:44 발행, 정정 0), 11/12 Vol.35, 이후 평일마다 +1. 호수 기준은 편집국 기록.
+주간: 월 WEEKLY AX, 화 두부(넷째 화 PEOPLE, 첫 회 11/24), 수 WEEKLY '이번 주 침'. 11/2 WEEKLY AX Vol.4, 11/3 두부 Vol.4, 11/4 WEEKLY Vol.5, 11/9 WEEKLY AX Vol.5, 11/10 두부 Vol.5, 11/11 WEEKLY Vol.6 창간 특집.
+창간 경과(2026-11-11): 창간은 일정대로 나갔다. 사이트 진열은 11/11 10:56(07:00 전 미달). 예비호 ⑥~⑨(11/5~11/10)는 Aside PC 공백으로 사이트에 진열되지 않았고(editions.json이 11/4 → 11/11), 그 기간 점검 메일·촉 수확·중간 평가·가부 판단 자료도 없다. 창간의 말은 편집국이 확정본을 드라이브·메일에서 찾지 못해 11/9 리허설 초안으로 썼다.
 
 ## 일정 (2026-10-30 개편, 창간 전 07:00 전 새 판)
 
@@ -29,6 +30,7 @@ Claude 예약 작업 지침 맨 앞 블록 순서: [예비호 실험] → [문�
   - 공약 칩(app.js `pledgesOf`): 항목의 pledges 배열을 먼저 쓰고, 없을 때만 본문의 '날줄 공약N' → '닿는 공약' 구간(씨줄·'|' 앞까지, 'AX①' 제외) 순으로 읽는다(2026-11-04 고침).
   - 정정판 진열: editions.json 항목 body를 고치고 처음 판은 versions 맨 앞에 {label:'처음 판 · HH:MM', body}로, edition은 '편집국 직송판 · 정정', corrections.json에 kind '정정' 한 건(what·how·why·when·prev_version_link·source), chim-trace의 from.signal 제목도 맞춘다.
   - 오늘 면 '이번 주의 촉과 침'(app.js viewToday): 이번 주 판이 6개 미만이면 지난 촉과 침으로 채운다(FILL_TO=6, 침 최대 2, 2026-11-02).
+  - 편집국 직송판 JSON에 11/5부터 weave 칸(["AX③×공약4", …]), 11/10부터 신호마다 brief 칸(중랑브리핑 기사 id)이 붙어 온다. 진열 때 지우지 않는다.
   - `data/{id}.webp`: 지면 이미지(Claude 대화의 files/…/preview, 896px webp).
   - 피드 rewrites(vercel.json): /feed/signal.json(GPT 제작실 data.json), /feed/aa/catalog.js(아궁이), /feed/chok/:file(GitHub inbox/chok).
 - 규칙 원장: https://github.com/goodmorninghope-khs/jungnang-signal — shared/chokchim-charter.md(v1.1), pledge-map.md(공약 7대 비전), pilot-experiments.md(실험표), reference-hub.md(두 엔진 공통 참조), launch-pilot.md(파일럿·일정), convergence.md, two-engines.md, inbox/chok/.
@@ -43,4 +45,4 @@ Claude 예약 작업 지침 맨 앞 블록 순서: [예비호 실험] → [문�
 ## 창간 가부 기준 (11/10 판단 자료, 결정은 발행인)
 
 머리 외부 8호 이상 · 평가로 느껴질 표현 0 · 해외·국내 각 40% 이상(9호 합계) · 신호마다 닿는 공약 표시와 7대 비전 고루 · GPT 후보 매일 적재·채택 평균 1 이상 · 사이트 07:00 전 진열·오류 0 · 3분 읽기.
-이정표: 11/6 1주차 중간 평가, 11/9 창간호 구성안(창간사 확정 기한 11/9), 11/10 가부 판단 자료.
+이정표: 11/6 1주차 중간 평가, 11/9 창간호 구성안(창간사 확정 기한 11/9), 11/10 가부 판단 자료. (2026-11-11 기준: 세 이정표 모두 Aside 쪽 자료가 만들어지지 않았다. 가부 결정 기록은 아직 찾지 못함.)
